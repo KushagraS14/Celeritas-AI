@@ -1,0 +1,20 @@
+streamlit
+huggingface_hub
+pypdf2
+python_dotenv
+faiss_cpu
+langchain
+altair
+tiktoken
+# InstructorEmbedding
+sentence-transformers
+langchain-community
+transformers
+torch
+accelerate
+requests
+beautifulsoup4
+pandas
+python-pptx
+python-docx
+openpyxl
