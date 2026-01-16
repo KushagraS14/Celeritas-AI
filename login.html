@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login | Tax Wizz</title>
+    <style>
+        /* Basic styles to match the image */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-box {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            width: 350px;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 14px;
+        }
+        h2 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        button {
+            width: 100%;
+            padding: 12px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        button:hover {
+            background: linear-gradient(135deg, #5a67d8, #6b46c1);
+        }
+        .error {
+            color: #e53e3e;
+            margin-bottom: 20px;
+            padding: 10px;
+            background: #fed7d7;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .demo {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+            background: #f7f7f7;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .footer {
+            margin-top: 30px;
+            color: #888;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-box">
+        <h1>Tax Wizz</h1>
+        <div class="subtitle">Please login to continue</div>
+        
+        <h2>Welcome Back</h2>
+        
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+        
+        <form method="POST" action="/login">
+            <input type="text" name="username" placeholder="Username" value="admin" required>
+            <input type="password" name="password" placeholder="Password" value="admin123" required>
+            <button type="submit">Login</button>
+        </form>
+        
+        <div class="demo">
+            <strong>Demo Credentials:</strong><br>
+            Username: admin | Password: admin123
+        </div>
+        
+        <div class="footer">
+            © 2025 Tax Wizz. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>

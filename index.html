@@ -1,0 +1,1445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excel to JSON Converter | Advanced Data Processor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+    <style>
+        :root {
+            --primary-color: #2c3e50;
+            --secondary-color: #3498db;
+            --accent-color: #e74c3c;
+            --success-color: #27ae60;
+            --light-bg: #ecf0f1;
+            --dark-bg: #1a1a2e;
+            --card-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: #333;
+            padding-bottom: 50px;
+        }
+
+        .header-section {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 2.5rem 1rem;
+            border-radius: 0 0 40px 40px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .card-glass {
+            background: rgba(255, 255, 255, 0.92);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: var(--card-shadow);
+            transition: var(--transition);
+            overflow: hidden;
+        }
+
+        .card-glass:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+        
+        .logo-rounded {
+            max-height: 160px;
+            max-width: 100%;
+            object-fit: contain;
+            border-radius: 5px; /* Slightly rounded corners */
+            filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15));
+            transition: all 0.3s ease;
+        }
+
+        /* Optional hover effect */
+        .logo-rounded:hover {
+            transform: scale(1.05);
+            filter: drop-shadow(0 6px 16px rgba(0,0,0,0.2));
+        }
+
+        /* Ensure the column has proper alignment */
+        .col-lg-4.text-center.d-none.d-lg-block {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .upload-zone {
+            border: 3px dashed var(--secondary-color);
+            border-radius: 20px;
+            padding: 3rem;
+            background: rgba(52, 152, 219, 0.05);
+            cursor: pointer;
+            transition: var(--transition);
+            position: relative;
+            min-height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .upload-zone:hover {
+            border-color: var(--primary-color);
+            background: rgba(52, 152, 219, 0.1);
+        }
+
+        .upload-zone.dragover {
+            border-color: var(--success-color);
+            background: rgba(39, 174, 96, 0.1);
+            animation: pulse 1.5s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+            100% { transform: scale(1); }
+        }
+
+        .preview-container {
+            background: var(--dark-bg);
+            color: #e2e8f0;
+            border-radius: 15px;
+            padding: 1.5rem;
+            font-family: 'Fira Code', 'Courier New', monospace;
+            font-size: 14px;
+            line-height: 1.6;
+            max-height: 500px;
+            overflow-y: auto;
+            position: relative;
+        }
+
+        .json-line {
+            padding: 2px 0;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .line-number {
+            color: #718096;
+            padding-right: 15px;
+            user-select: none;
+            min-width: 40px;
+            text-align: right;
+        }
+
+        .json-content {
+            flex: 1;
+            white-space: pre-wrap;
+            word-break: break-word;
+        }
+
+        .json-key {
+            color: #63b3ed;
+        }
+
+        .json-string {
+            color: #68d391;
+        }
+
+        .json-number {
+            color: #f6e05e;
+        }
+
+        .json-boolean {
+            color: #f687b3;
+        }
+
+        .json-null {
+            color: #a0aec0;
+        }
+
+        .json-bracket {
+            color: #e2e8f0;
+            font-weight: bold;
+        }
+
+        .json-colon {
+            color: #e2e8f0;
+            margin: 0 5px;
+        }
+
+        .json-comma {
+            color: #a0aec0;
+        }
+
+        .btn-primary-custom {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 600;
+            transition: var(--transition);
+            box-shadow: 0 4px 15px rgba(44, 62, 80, 0.2);
+        }
+
+        .btn-primary-custom:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(44, 62, 80, 0.3);
+            color: white;
+        }
+
+        .btn-secondary-custom {
+            background: transparent;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            border-radius: 12px;
+            padding: 12px 24px;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .btn-secondary-custom:hover {
+            background: var(--secondary-color);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+        .feature-card {
+            text-align: center;
+            padding: 2rem 1.5rem;
+            height: 100%;
+        }
+
+        .feature-icon {
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem;
+            color: white;
+            font-size: 1.8rem;
+        }
+
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            border-left: 4px solid var(--secondary-color);
+            height: 100%;
+        }
+
+        .option-group {
+            background: rgba(52, 152, 219, 0.05);
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .tab-header {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .tab-btn {
+            padding: 8px 20px;
+            background: none;
+            border: none;
+            border-bottom: 3px solid transparent;
+            color: #666;
+            font-weight: 600;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .tab-btn.active {
+            color: var(--primary-color);
+            border-bottom-color: var(--secondary-color);
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .file-info-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 1rem;
+            display: none;
+        }
+
+        .notification {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 1rem 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+            transform: translateX(150%);
+            transition: transform 0.3s ease;
+            z-index: 1000;
+            border-left: 4px solid var(--success-color);
+            max-width: 350px;
+        }
+
+        .notification.show {
+            transform: translateX(0);
+        }
+
+        .loader {
+            display: none;
+            width: 50px;
+            height: 50px;
+            border: 3px solid #f3f3f3;
+            border-top: 3px solid var(--secondary-color);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .format-options {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .format-option {
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: var(--transition);
+            text-align: center;
+        }
+
+        .format-option:hover {
+            border-color: var(--secondary-color);
+            background: rgba(52, 152, 219, 0.05);
+        }
+
+        .format-option.active {
+            border-color: var(--secondary-color);
+            background: rgba(52, 152, 219, 0.1);
+            box-shadow: 0 4px 15px rgba(52, 152, 219, 0.1);
+        }
+
+        .row-divider {
+            border-top: 2px dashed #e0e0e0;
+            margin: 2rem 0;
+        }
+
+        @media (max-width: 768px) {
+            .header-section {
+                padding: 1.5rem 1rem;
+            }
+            
+            .upload-zone {
+                padding: 2rem 1rem;
+            }
+            
+            .preview-container {
+                font-size: 12px;
+            }
+            
+            .btn-primary-custom, .btn-secondary-custom {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+   
+<div class="d-flex justify-content-end mb-3">
+    <a href="{{ url_for('logout') }}" class="btn btn-danger px-4 py-2 shadow">
+        <i class="fas fa-sign-out-alt me-2"></i>Back to Login
+    </a>
+</div>
+
+    <!-- Notification System -->
+    <div class="notification" id="notification">
+        <div class="d-flex align-items-center">
+            <i class="fas fa-check-circle text-success me-2"></i>
+            <span id="notification-text">Operation completed successfully!</span>
+        </div>
+    </div>
+
+    <!-- Header Section -->
+    <div class="header-section">
+        <div class="main-container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h1 class="display-5 fw-bold mb-3 text-primary">
+                        <i class="fas fa-wallet me-2"></i>Tax Wizz
+                    </h1>
+                    <p class="lead mb-4 text-muted">
+                        Convert Excel files to beautifully formatted JSON with advanced customization options.
+                        All processing happens locally in your browser.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-primary p-2">100% Client-side</span>
+                        <span class="badge bg-secondary p-2">Multi-format Support</span>
+                        <span class="badge bg-success p-2">Real-time Preview</span>
+                        <span class="badge bg-info p-2">Batch Processing</span>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-center d-none d-lg-block">
+                    <!--<img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel Logo" height="80" class="mb-3">
+                    <i class="fas fa-arrow-right mx-3 fa-2x text-muted"></i>
+                    <img src="https://cdn-icons-png.flaticon.com/512/136/136525.png" alt="JSON Logo" height="80">-->
+                    <img src="/static/tcai_logo.jpeg" alt="Logo" class="logo-rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Upload Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card-glass p-4">
+                    <h3 class="mb-4">
+                        <i class="fas fa-cloud-upload-alt me-2 text-primary"></i>Upload Excel File
+                    </h3>
+                    
+                    <div class="upload-zone" id="dropZone">
+                        <div class="text-center">
+                            <i class="fas fa-file-excel fa-4x mb-3 text-primary"></i>
+                            <h4 class="mb-3">Drag & Drop Excel File Here</h4>
+                            <p class="text-muted mb-4">or click to browse files</p>
+                            <button class="btn-primary-custom" onclick="document.getElementById('fileInput').click()">
+                                <i class="fas fa-folder-open me-2"></i>Browse Files
+                            </button>
+                            <input type="file" id="fileInput" accept=".xlsx,.xls,.xlsm,.xlsb,.csv" class="d-none">
+                        </div>
+                    </div>
+
+                    <div class="file-info-card" id="fileInfo">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div>
+                                <h5 class="mb-1" id="fileName">No file selected</h5>
+                                <small id="fileSize"></small>
+                                <small id="fileSheets" class="d-block"></small>
+                            </div>
+                            <button class="btn btn-light btn-sm" onclick="clearFile()">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Processing Options -->
+        <div class="row mb-4">
+            <div class="col-lg-8">
+                <div class="card-glass p-4">
+                    <div class="tab-header">
+                        <button class="tab-btn active" onclick="showTab('format')">
+                            <i class="fas fa-cog me-2"></i>Format Options
+                        </button>
+                        <button class="tab-btn" onclick="showTab('data')">
+                            <i class="fas fa-database me-2"></i>Data Processing
+                        </button>
+                    </div>
+
+                    <div class="tab-content active" id="formatTab">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Worksheet Selection</label>
+                                <select class="form-select" id="sheetSelect" disabled>
+                                    <option value="">Select a worksheet...</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">JSON Format</label>
+                                <div class="format-options">
+                                    <div class="format-option active" onclick="selectFormat('pretty')">
+                                        <i class="fas fa-indent fa-2x mb-2"></i>
+                                        <div>Pretty Print</div>
+                                        <small class="text-muted">Indented JSON</small>
+                                    </div>
+                                    <div class="format-option" onclick="selectFormat('minified')">
+                                        <i class="fas fa-compress-alt fa-2x mb-2"></i>
+                                        <div>Minified</div>
+                                        <small class="text-muted">Compact format</small>
+                                    </div>
+                                    <div class="format-option" onclick="selectFormat('table')">
+                                        <i class="fas fa-table fa-2x mb-2"></i>
+                                        <div>Table Format</div>
+                                        <small class="text-muted">Structured data</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row g-3 mt-3">
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Indentation Level</label>
+                                <select class="form-select" id="indentSelect">
+                                    <option value="2">2 spaces</option>
+                                    <option value="4" selected>4 spaces</option>
+                                    <option value="8">8 spaces</option>
+                                    <option value="tab">Tab</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label fw-bold">Sort Keys</label>
+                                <select class="form-select" id="sortSelect">
+                                    <option value="none">No sorting</option>
+                                    <option value="asc">Ascending (A-Z)</option>
+                                    <option value="desc">Descending (Z-A)</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-content" id="dataTab">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="option-group">
+                                    <h6><i class="fas fa-heading me-2"></i>Header Options</h6>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input" type="checkbox" id="useHeaders" checked>
+                                        <label class="form-check-label" for="useHeaders">
+                                            Use first row as headers
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="cleanHeaders">
+                                        <label class="form-check-label" for="cleanHeaders">
+                                            Clean header names (remove spaces)
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="option-group">
+                                    <h6><i class="fas fa-filter me-2"></i>Data Processing</h6>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="trimValues" checked>
+                                        <label class="form-check-label" for="trimValues">
+                                            Trim whitespace from values
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-2">
+                                        <input class="form-check-input" type="checkbox" id="removeEmpty" checked>
+                                        <label class="form-check-label" for="removeEmpty">
+                                            Remove empty properties
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3 mt-4">
+                        <button class="btn-primary-custom" id="convertBtn" disabled>
+                            <i class="fas fa-bolt me-2"></i>Convert to JSON
+                        </button>
+                        <button class="btn-secondary-custom" id="previewBtn" disabled>
+                            <i class="fas fa-eye me-2"></i>Live Preview
+                        </button>
+                        <button class="btn-secondary-custom" id="resetBtn">
+                            <i class="fas fa-redo me-2"></i>Reset Options
+                        </button>
+                    </div>
+
+                    <div class="loader" id="conversionLoader"></div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card-glass p-4 h-100">
+                    <h5 class="mb-4">
+                        <i class="fas fa-info-circle me-2 text-primary"></i>Quick Stats
+                    </h5>
+                    <div class="row g-3">
+                        <div class="col-6">
+                            <div class="stats-card">
+                                <div class="text-muted small">Files Processed</div>
+                                <h3 class="text-primary mb-0" id="filesCount">0</h3>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stats-card">
+                                <div class="text-muted small">Total Rows</div>
+                                <h3 class="text-primary mb-0" id="totalRows">0</h3>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stats-card">
+                                <div class="text-muted small">Avg Time</div>
+                                <h3 class="text-primary mb-0" id="avgTime">0s</h3>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="stats-card">
+                                <div class="text-muted small">Data Size</div>
+                                <h3 class="text-primary mb-0" id="dataSize">0 KB</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h6 class="mb-3">
+                            <i class="fas fa-history me-2"></i>Recent Files
+                        </h6>
+                        <div id="recentFiles" class="small">
+                            <div class="text-muted">No recent files</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- JSON Output Section -->
+        <div class="row mb-4">
+            <div class="col-12">
+                <div class="card-glass p-4">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <h4 class="mb-0">
+                            <i class="fas fa-code me-2 text-primary"></i>JSON Output
+                            <small class="text-muted ms-2" id="outputInfo">Ready for conversion</small>
+                        </h4>
+                        <div class="d-flex gap-2">
+                            <span class="badge bg-primary" id="charCount">0 chars</span>
+                            <span class="badge bg-secondary" id="lineCount">0 lines</span>
+                            <span class="badge bg-success" id="objectCount">0 objects</span>
+                        </div>
+                    </div>
+
+                    <div class="preview-container" id="previewArea">
+                        <div id="jsonContent">
+                            <div class="text-center text-muted py-5">
+                                <i class="fas fa-code fa-3x mb-3"></i>
+                                <h5>No JSON data yet</h5>
+                                <p>Upload an Excel file and convert it to see the JSON output here</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-center mt-4">
+                        <div>
+                            <button class="btn-primary-custom me-2" id="copyBtn" disabled>
+                                <i class="fas fa-copy me-2"></i>Copy JSON
+                            </button>
+                            <button class="btn-secondary-custom me-2" id="downloadBtn" disabled>
+                                <i class="fas fa-download me-2"></i>Download
+                            </button>
+                            <button class="btn btn-outline-secondary" id="clearOutputBtn">
+                                <i class="fas fa-trash me-2"></i>Clear Output
+                            </button>
+                        </div>
+                        <div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input" type="checkbox" id="autoScroll" checked>
+                                <label class="form-check-label" for="autoScroll">Auto-scroll</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Features Section -->
+        <div class="row row-divider"></div>
+        
+        <div class="row mb-4">
+            <div class="col-12 text-center mb-4">
+                <h3 class="text-primary">Powerful Features</h3>
+                <p class="text-muted">Everything you need for efficient Excel to JSON conversion</p>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-card card-glass">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h5 class="mb-3">Secure & Private</h5>
+                    <p class="text-muted">
+                        All processing happens locally in your browser. No data is sent to any server.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-card card-glass">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h5 class="mb-3">Lightning Fast</h5>
+                    <p class="text-muted">
+                        Optimized algorithms handle large Excel files with thousands of rows efficiently.
+                    </p>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="feature-card card-glass">
+                    <div class="feature-icon">
+                        <i class="fas fa-sliders-h"></i>
+                    </div>
+                    <h5 class="mb-3">Clean Output</h5>
+                    <p class="text-muted">
+                        Automatically removes null/empty values for cleaner, more concise JSON output.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="main-container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h5>Excel to JSON Converter Pro</h5>
+                    <p class="text-muted mb-0">
+                        A professional tool for developers and data analysts
+                    </p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="text-muted small mb-0">
+                        Made with <i class="fas fa-heart text-danger"></i> for the developer community
+                    </p>
+                    <p class="text-muted small">© 2024 All rights reserved</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Main application state
+        const appState = {
+            currentFile: null,
+            workbook: null,
+            jsonOutput: null,
+            recentFiles: [],
+            conversionStats: {
+                filesProcessed: 0,
+                totalRows: 0,
+                totalConversions: 0,
+                totalTime: 0,
+                totalData: 0
+            },
+            settings: {
+                format: 'pretty',
+                indent: 4,
+                sortKeys: 'none',
+                useHeaders: true,
+                cleanHeaders: true,
+                trimValues: true,
+                removeEmpty: true
+            }
+        };
+
+        // DOM Elements
+        const elements = {
+            dropZone: document.getElementById('dropZone'),
+            fileInput: document.getElementById('fileInput'),
+            fileInfo: document.getElementById('fileInfo'),
+            fileName: document.getElementById('fileName'),
+            fileSize: document.getElementById('fileSize'),
+            fileSheets: document.getElementById('fileSheets'),
+            sheetSelect: document.getElementById('sheetSelect'),
+            convertBtn: document.getElementById('convertBtn'),
+            previewBtn: document.getElementById('previewBtn'),
+            previewArea: document.getElementById('previewArea'),
+            jsonContent: document.getElementById('jsonContent'),
+            copyBtn: document.getElementById('copyBtn'),
+            downloadBtn: document.getElementById('downloadBtn'),
+            clearOutputBtn: document.getElementById('clearOutputBtn'),
+            notification: document.getElementById('notification'),
+            notificationText: document.getElementById('notification-text'),
+            charCount: document.getElementById('charCount'),
+            lineCount: document.getElementById('lineCount'),
+            objectCount: document.getElementById('objectCount'),
+            loader: document.getElementById('conversionLoader'),
+            outputInfo: document.getElementById('outputInfo'),
+            stats: {
+                filesCount: document.getElementById('filesCount'),
+                totalRows: document.getElementById('totalRows'),
+                avgTime: document.getElementById('avgTime'),
+                dataSize: document.getElementById('dataSize')
+            }
+        };
+
+        // Initialize the application
+        function init() {
+            loadState();
+            setupEventListeners();
+            updateStatsDisplay();
+            updateRecentFiles();
+        }
+
+        function loadState() {
+            const savedState = localStorage.getItem('excelConverterState');
+            if (savedState) {
+                const parsed = JSON.parse(savedState);
+                appState.conversionStats = parsed.conversionStats || appState.conversionStats;
+                appState.recentFiles = parsed.recentFiles || [];
+                appState.settings = parsed.settings || appState.settings;
+                
+                // Update UI to match loaded settings
+                document.getElementById('useHeaders').checked = appState.settings.useHeaders;
+                document.getElementById('cleanHeaders').checked = appState.settings.cleanHeaders;
+                document.getElementById('trimValues').checked = appState.settings.trimValues;
+                document.getElementById('removeEmpty').checked = appState.settings.removeEmpty;
+                document.getElementById('indentSelect').value = appState.settings.indent;
+                document.getElementById('sortSelect').value = appState.settings.sortKeys;
+            }
+        }
+
+        function saveState() {
+            localStorage.setItem('excelConverterState', JSON.stringify({
+                conversionStats: appState.conversionStats,
+                recentFiles: appState.recentFiles,
+                settings: appState.settings
+            }));
+        }
+
+        function setupEventListeners() {
+            // Drag and drop
+            ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+                elements.dropZone.addEventListener(eventName, preventDefaults, false);
+            });
+
+            elements.dropZone.addEventListener('dragenter', highlight, false);
+            elements.dropZone.addEventListener('dragover', highlight, false);
+            elements.dropZone.addEventListener('dragleave', unhighlight, false);
+            elements.dropZone.addEventListener('drop', handleDrop, false);
+            elements.dropZone.addEventListener('click', () => elements.fileInput.click());
+
+            elements.fileInput.addEventListener('change', handleFileSelect);
+
+            // Control buttons
+            elements.convertBtn.addEventListener('click', convertToJSON);
+            elements.previewBtn.addEventListener('click', previewJSON);
+            elements.copyBtn.addEventListener('click', copyToClipboard);
+            elements.downloadBtn.addEventListener('click', downloadJSON);
+            elements.clearOutputBtn.addEventListener('click', clearOutput);
+            document.getElementById('resetBtn').addEventListener('click', resetOptions);
+
+            // Settings
+            document.getElementById('useHeaders').addEventListener('change', (e) => {
+                appState.settings.useHeaders = e.target.checked;
+                saveState();
+            });
+
+            document.getElementById('cleanHeaders').addEventListener('change', (e) => {
+                appState.settings.cleanHeaders = e.target.checked;
+                saveState();
+            });
+
+            document.getElementById('trimValues').addEventListener('change', (e) => {
+                appState.settings.trimValues = e.target.checked;
+                saveState();
+            });
+
+            document.getElementById('removeEmpty').addEventListener('change', (e) => {
+                appState.settings.removeEmpty = e.target.checked;
+                saveState();
+            });
+
+            document.getElementById('indentSelect').addEventListener('change', (e) => {
+                appState.settings.indent = e.target.value === 'tab' ? '\t' : parseInt(e.target.value);
+                saveState();
+            });
+
+            document.getElementById('sortSelect').addEventListener('change', (e) => {
+                appState.settings.sortKeys = e.target.value;
+                saveState();
+            });
+
+            // Keyboard shortcuts
+            document.addEventListener('keydown', (e) => {
+                if (e.ctrlKey && e.key === 'o') {
+                    e.preventDefault();
+                    elements.fileInput.click();
+                }
+                if (e.ctrlKey && e.key === 'Enter' && !elements.convertBtn.disabled) {
+                    e.preventDefault();
+                    elements.convertBtn.click();
+                }
+            });
+        }
+
+        function preventDefaults(e) {
+            e.preventDefault();
+            e.stopPropagation();
+        }
+
+        function highlight() {
+            elements.dropZone.classList.add('dragover');
+        }
+
+        function unhighlight() {
+            elements.dropZone.classList.remove('dragover');
+        }
+
+        function handleDrop(e) {
+            const dt = e.dataTransfer;
+            const file = dt.files[0];
+            handleFile(file);
+        }
+
+        function handleFileSelect(e) {
+            const file = e.target.files[0];
+            handleFile(file);
+        }
+
+        function handleFile(file) {
+            if (!file) return;
+            
+            const validTypes = ['.xlsx', '.xls', '.xlsm', '.xlsb', '.csv'];
+            const fileExt = '.' + file.name.split('.').pop().toLowerCase();
+            
+            if (!validTypes.includes(fileExt)) {
+                showNotification('Please select a valid Excel or CSV file', 'error');
+                return;
+            }
+
+            appState.currentFile = file;
+            updateFileInfo(file);
+            
+            // Update stats
+            appState.conversionStats.filesProcessed++;
+            appState.conversionStats.totalData += file.size;
+            saveState();
+            updateStatsDisplay();
+
+            // Add to recent files
+            addToRecentFiles(file);
+
+            // Read Excel file
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                try {
+                    const data = new Uint8Array(e.target.result);
+                    appState.workbook = XLSX.read(data, { type: 'array' });
+                    
+                    // Populate sheet selector
+                    populateSheetSelector();
+                    
+                    // Enable buttons
+                    elements.convertBtn.disabled = false;
+                    elements.previewBtn.disabled = false;
+                    
+                    showNotification('File loaded successfully!', 'success');
+                } catch (error) {
+                    showNotification('Error reading file. Please try again.', 'error');
+                    console.error('File reading error:', error);
+                }
+            };
+            reader.readAsArrayBuffer(file);
+        }
+
+        function populateSheetSelector() {
+            elements.sheetSelect.innerHTML = '<option value="">Select a worksheet...</option>';
+            appState.workbook.SheetNames.forEach((sheetName, index) => {
+                const option = document.createElement('option');
+                option.value = index;
+                const worksheet = appState.workbook.Sheets[sheetName];
+                const range = worksheet['!ref'] ? worksheet['!ref'].split(':')[1] : 'N/A';
+                option.textContent = `${sheetName} (${range})`;
+                elements.sheetSelect.appendChild(option);
+            });
+            elements.sheetSelect.disabled = false;
+        }
+
+        function updateFileInfo(file) {
+            elements.fileName.textContent = file.name;
+            elements.fileSize.textContent = formatFileSize(file.size);
+            elements.fileInfo.style.display = 'block';
+        }
+
+        function convertToJSON() {
+            if (!appState.workbook) return;
+            
+            const sheetIndex = elements.sheetSelect.value;
+            if (!sheetIndex) {
+                showNotification('Please select a worksheet', 'warning');
+                return;
+            }
+
+            elements.loader.style.display = 'block';
+            elements.convertBtn.disabled = true;
+            elements.outputInfo.textContent = 'Processing...';
+            
+            setTimeout(() => {
+                try {
+                    const startTime = performance.now();
+                    const sheetName = appState.workbook.SheetNames[sheetIndex];
+                    const worksheet = appState.workbook.Sheets[sheetName];
+                    
+                    // Convert to JSON using XLSX library
+                    let jsonData;
+                    if (appState.settings.useHeaders) {
+                        jsonData = XLSX.utils.sheet_to_json(worksheet, { raw: false });
+                    } else {
+                        // Without headers, get raw data
+                        const rawData = XLSX.utils.sheet_to_json(worksheet, { header: 1, raw: false });
+                        // Convert to array of objects with auto-generated keys
+                        jsonData = rawData.slice(1).map((row, index) => {
+                            const obj = {};
+                            row.forEach((cell, cellIndex) => {
+                                obj[`column${cellIndex + 1}`] = cell;
+                            });
+                            return obj;
+                        });
+                    }
+                    
+                    // Process the data based on settings
+                    let processedData = jsonData.map(row => {
+                        const processedRow = {};
+                        
+                        for (const [key, value] of Object.entries(row)) {
+                            // Skip null, undefined, and empty string values if removeEmpty is enabled
+                            if (appState.settings.removeEmpty && 
+                                (value === null || value === undefined || value === '')) {
+                                continue;
+                            }
+                            
+                            let processedValue = value;
+                            
+                            // Clean header names if enabled
+                            let processedKey = key;
+                            if (appState.settings.useHeaders && appState.settings.cleanHeaders) {
+                                processedKey = key.toString().trim().replace(/\s+/g, '_');
+                            }
+                            
+                            // Trim whitespace if enabled
+                            if (appState.settings.trimValues && typeof processedValue === 'string') {
+                                processedValue = processedValue.trim();
+                            }
+                            
+                            processedRow[processedKey] = processedValue;
+                        }
+                        
+                        return processedRow;
+                    });
+                    
+                    // Sort keys if needed
+                    if (appState.settings.sortKeys !== 'none' && processedData.length > 0) {
+                        processedData = processedData.map(obj => {
+                            const sorted = {};
+                            Object.keys(obj).sort((a, b) => {
+                                return appState.settings.sortKeys === 'asc' 
+                                    ? a.localeCompare(b) 
+                                    : b.localeCompare(a);
+                            }).forEach(key => {
+                                sorted[key] = obj[key];
+                            });
+                            return sorted;
+                        });
+                    }
+                    
+                    // Store the processed data
+                    appState.jsonOutput = {
+    capitalGain: [
+        {
+            assessmentYear: "2025-2026",
+            assesseeType: "INDIVIDUAL",
+            residentialStatus: "RESIDENT",
+            assetType: "EQUITY_SHARES_LISTED",
+            deduction: [],
+            improvement: [],
+            buyersDetails: [],
+            assetDetails: processedData.map((row, index) => ({
+                srn: index + 1,
+                description: null,
+                gainType: row.gainType || "LONG",
+                sellDate: row.sellDate || null,
+                sellValue: Number(row.sellValue || 0),
+                stampDutyValue: 0,
+                valueInConsideration: 0,
+                sellExpense: 0,
+                purchaseDate: row.purchaseDate || null,
+                purchaseCost: Number(row.purchaseCost || 0),
+                isinCode: row.isinCode || "",
+                nameOfTheUnits: row.nameOfTheUnits || "",
+                sellOrBuyQuantity: Number(row.sellOrBuyQuantity || 0),
+                sellValuePerUnit: Number(row.sellValuePerUnit || 0),
+                purchaseValuePerUnit: Number(row.purchaseValuePerUnit || 0),
+                algorithm: "cgSharesMF",
+                fmvAsOn31Jan2018: 0,
+                capitalGain: Number(row.capitalGain || 0),
+                cgWithIndexation: 0,
+                cgWithoutIndexation: 0,
+                cgTaxWithIndexation: 0,
+                cgTaxWithoutIndexation: 0,
+                excessTaxToBeIgnored: 0,
+                indexCostOfAcquisition: 0,
+                totalFairMarketValueOfCapitalAsset: 0,
+                grandFatheredValue: 0,
+                brokerName: "Manual",
+                headOfIncome: null,
+                cgBeforeDeduction: Number(row.capitalGain || 0),
+                costOfImprovement: 0,
+                lowerOfFMVandSaleValue: 0,
+                isIndexationBenefitAvailable: false,
+                whetherDebenturesAreListed: false
+            }))
+        }
+    ],
+
+    profitLossACIncomes: [
+        {
+            id: 0,
+            businessType: "SPECULATIVEINCOME",
+            totalgrossProfitFromNonSpeculativeIncome: 0,
+            netProfitfromNonSpeculativeIncome: 0,
+            totalgrossProfitFromSpeculativeIncome: 0,
+            netProfitfromSpeculativeIncome: 0,
+            incomes: [
+                {
+                    id: 0,
+                    turnOver: 0,
+                    grossProfit: 0,
+                    expenditure: 0,
+                    brokerName: "Manual"
+                }
+            ],
+            expenses: null,
+            otherIncomes: []
+        }
+    ]
+};
+
+                    
+                    // Format JSON
+                    let indent;
+                    if (appState.settings.format === 'minified') {
+                        indent = 0;
+                    } else if (appState.settings.indent === 'tab') {
+                        indent = '\t';
+                    } else {
+                        indent = parseInt(appState.settings.indent);
+                    }
+                    
+                    const jsonString = JSON.stringify(appState.jsonOutput, null, indent);
+                    
+                    // Update stats
+                    const endTime = performance.now();
+                    const conversionTime = (endTime - startTime) / 1000;
+                    
+                    appState.conversionStats.totalConversions++;
+                    appState.conversionStats.totalTime += conversionTime;
+                    appState.conversionStats.totalRows += jsonData.length;
+                    saveState();
+                    updateStatsDisplay();
+                    
+                    // Display JSON
+                    displayJSON(jsonString);
+                    
+                    // Enable buttons
+                    elements.copyBtn.disabled = false;
+                    elements.downloadBtn.disabled = false;
+                    
+                    showNotification(`Converted ${jsonData.length} rows in ${conversionTime.toFixed(2)}s`, 'success');
+                    
+                } catch (error) {
+                    showNotification('Error during conversion', 'error');
+                    console.error('Conversion error:', error);
+                } finally {
+                    elements.loader.style.display = 'none';
+                    elements.convertBtn.disabled = false;
+                }
+            }, 100);
+        }
+
+        function displayJSON(jsonString) {
+            const lines = jsonString.split('\n');
+            const lineCount = lines.length;
+            const charCount = jsonString.length;
+           const objectCount =
+    appState.jsonOutput?.capitalGain?.[0]?.assetDetails?.length || 0;
+
+            
+            // Update counts
+            elements.charCount.textContent = `${charCount.toLocaleString()} chars`;
+            elements.lineCount.textContent = `${lineCount} lines`;
+            elements.objectCount.textContent = `${objectCount} objects`;
+            elements.outputInfo.textContent = `${objectCount} objects, ${lineCount} lines`;
+            
+            // Display with syntax highlighting
+            let html = '';
+            
+            // Always show line numbers for better readability
+            lines.forEach((line, index) => {
+                html += `<div class="json-line">`;
+                html += `<div class="line-number">${index + 1}</div>`;
+                html += `<div class="json-content">${highlightJSON(line)}</div>`;
+                html += `</div>`;
+            });
+            
+            elements.jsonContent.innerHTML = html;
+            
+            // Auto-scroll to top
+            if (document.getElementById('autoScroll').checked) {
+                elements.previewArea.scrollTop = 0;
+            }
+        }
+
+        function highlightJSON(text) {
+            // Remove null highlighting since we're removing null values
+            return text.replace(/("(\\u[a-zA-Z0-9]{4}|\\[^u]|[^\\"])*"(\s*:)?|\b(true|false)\b|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?)/g, match => {
+                let cls = 'json-number';
+                if (/^"/.test(match)) {
+                    if (/:$/.test(match)) {
+                        cls = 'json-key';
+                        // Remove the colon for separate styling
+                        const key = match.slice(0, -1);
+                        return `<span class="${cls}">${key}</span><span class="json-colon">:</span>`;
+                    } else {
+                        cls = 'json-string';
+                    }
+                } else if (/true|false/.test(match)) {
+                    cls = 'json-boolean';
+                }
+                return `<span class="${cls}">${match}</span>`;
+            })
+            .replace(/{/g, '<span class="json-bracket">{</span>')
+            .replace(/}/g, '<span class="json-bracket">}</span>')
+            .replace(/\[/g, '<span class="json-bracket">[</span>')
+            .replace(/\]/g, '<span class="json-bracket">]</span>')
+            .replace(/,/g, '<span class="json-comma">,</span>');
+        }
+
+        function previewJSON() {
+            if (appState.jsonOutput) {
+                const indent = appState.settings.indent === 'tab' ? '\t' : parseInt(appState.settings.indent);
+                const jsonString = JSON.stringify(appState.jsonOutput, null, indent);
+                displayJSON(jsonString);
+                elements.previewArea.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+
+        async function copyToClipboard() {
+            if (!appState.jsonOutput) return;
+            
+            try {
+                const jsonString = JSON.stringify(appState.jsonOutput, null, 2);
+                await navigator.clipboard.writeText(jsonString);
+                
+                // Show success feedback
+                const originalText = elements.copyBtn.innerHTML;
+                elements.copyBtn.innerHTML = '<i class="fas fa-check me-2"></i>Copied!';
+                elements.copyBtn.classList.add('btn-success');
+                elements.copyBtn.classList.remove('btn-primary-custom');
+                
+                showNotification('JSON copied to clipboard!', 'success');
+                
+                setTimeout(() => {
+                    elements.copyBtn.innerHTML = originalText;
+                    elements.copyBtn.classList.remove('btn-success');
+                    elements.copyBtn.classList.add('btn-primary-custom');
+                }, 2000);
+            } catch (err) {
+                showNotification('Failed to copy to clipboard', 'error');
+            }
+        }
+
+        function downloadJSON() {
+            if (!appState.jsonOutput) return;
+            
+            const jsonString = JSON.stringify(appState.jsonOutput, null, 2);
+            const blob = new Blob([jsonString], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            
+            const fileName = appState.currentFile 
+                ? appState.currentFile.name.replace(/\.[^/.]+$/, "") + '.json'
+                : 'converted.json';
+            
+            a.href = url;
+            a.download = fileName;
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            URL.revokeObjectURL(url);
+            
+            showNotification('JSON file downloaded!', 'success');
+        }
+
+        function clearOutput() {
+            appState.jsonOutput = null;
+            elements.jsonContent.innerHTML = `
+                <div class="text-center text-muted py-5">
+                    <i class="fas fa-code fa-3x mb-3"></i>
+                    <h5>No JSON data yet</h5>
+                    <p>Upload an Excel file and convert it to see the JSON output here</p>
+                </div>
+            `;
+            elements.charCount.textContent = '0 chars';
+            elements.lineCount.textContent = '0 lines';
+            elements.objectCount.textContent = '0 objects';
+            elements.outputInfo.textContent = 'Ready for conversion';
+            elements.copyBtn.disabled = true;
+            elements.downloadBtn.disabled = true;
+        }
+
+        function clearFile() {
+            elements.fileInput.value = '';
+            elements.fileInfo.style.display = 'none';
+            elements.sheetSelect.innerHTML = '<option value="">Select a worksheet...</option>';
+            elements.sheetSelect.disabled = true;
+            elements.convertBtn.disabled = true;
+            elements.previewBtn.disabled = true;
+            appState.currentFile = null;
+            appState.workbook = null;
+        }
+
+        function resetOptions() {
+            // Reset all checkboxes and selects to defaults
+            document.getElementById('useHeaders').checked = true;
+            document.getElementById('cleanHeaders').checked = true;
+            document.getElementById('trimValues').checked = true;
+            document.getElementById('removeEmpty').checked = true;
+            document.getElementById('indentSelect').value = '4';
+            document.getElementById('sortSelect').value = 'none';
+            
+            // Update app state
+            appState.settings = {
+                format: 'pretty',
+                indent: 4,
+                sortKeys: 'none',
+                useHeaders: true,
+                cleanHeaders: true,
+                trimValues: true,
+                removeEmpty: true
+            };
+            
+            saveState();
+            showNotification('Options reset to defaults', 'info');
+        }
+
+        function showTab(tabName) {
+            // Update tab buttons
+            document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+            
+            // Show selected tab
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            document.getElementById(tabName + 'Tab').classList.add('active');
+        }
+
+        function selectFormat(format) {
+            document.querySelectorAll('.format-option').forEach(opt => opt.classList.remove('active'));
+            event.target.closest('.format-option').classList.add('active');
+            appState.settings.format = format;
+            saveState();
+        }
+
+        function addToRecentFiles(file) {
+            const fileInfo = {
+                name: file.name,
+                size: file.size,
+                date: new Date().toISOString()
+            };
+            
+            // Add to beginning of array
+            appState.recentFiles.unshift(fileInfo);
+            
+            // Keep only last 5 files
+            if (appState.recentFiles.length > 5) {
+                appState.recentFiles.pop();
+            }
+            
+            saveState();
+            updateRecentFiles();
+        }
+
+        function updateRecentFiles() {
+            const container = document.getElementById('recentFiles');
+            if (appState.recentFiles.length === 0) {
+                container.innerHTML = '<div class="text-muted">No recent files</div>';
+                return;
+            }
+            
+            container.innerHTML = appState.recentFiles.map(file => `
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                    <div class="text-truncate" style="max-width: 150px;">
+                        <i class="fas fa-file-excel text-primary me-1"></i>
+                        ${file.name}
+                    </div>
+                    <small class="text-muted">${formatFileSize(file.size)}</small>
+                </div>
+            `).join('');
+        }
+
+        function updateStatsDisplay() {
+            elements.stats.filesCount.textContent = appState.conversionStats.filesProcessed;
+            elements.stats.totalRows.textContent = appState.conversionStats.totalRows.toLocaleString();
+            elements.stats.avgTime.textContent = appState.conversionStats.totalConversions > 0 
+                ? (appState.conversionStats.totalTime / appState.conversionStats.totalConversions).toFixed(2) + 's'
+                : '0s';
+            elements.stats.dataSize.textContent = formatFileSize(appState.conversionStats.totalData);
+        }
+
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        function showNotification(message, type = 'info') {
+            elements.notificationText.textContent = message;
+            
+            // Set icon and color based on type
+            const icon = elements.notification.querySelector('i');
+            icon.className = {
+                'success': 'fas fa-check-circle text-success me-2',
+                'error': 'fas fa-exclamation-circle text-danger me-2',
+                'warning': 'fas fa-exclamation-triangle text-warning me-2',
+                'info': 'fas fa-info-circle text-primary me-2'
+            }[type];
+            
+            elements.notification.classList.add('show');
+            
+            setTimeout(() => {
+                elements.notification.classList.remove('show');
+            }, 3000);
+        }
+
+        // Initialize the application
+        init();
+    </script>
+</body>
+</html>

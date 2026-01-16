@@ -1,0 +1,1314 @@
+2025-12-18 13:55:52,084 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 13:55:52,085 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 13:55:52,096 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 13:55:52,628 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 13:55:52,632 - werkzeug - INFO -  * Debugger PIN: 562-546-104
+2025-12-18 13:56:13,674 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app15.py', reloading
+2025-12-18 13:56:13,676 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app15.py', reloading
+2025-12-18 13:56:13,796 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 13:56:14,445 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 13:56:14,450 - werkzeug - INFO -  * Debugger PIN: 562-546-104
+2025-12-18 14:05:08,437 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 14:05:08,439 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 14:05:08,472 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 14:05:09,569 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 14:05:09,574 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 14:05:16,056 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 14:05:16,057 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:16] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 14:05:16,129 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:16] "GET /login HTTP/1.1" 200 -
+2025-12-18 14:05:17,623 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:05:17,636 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-12-18 14:05:17,818 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 14:05:23,454 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 14:05:23,473 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 14:05:23,718 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 14:05:23,727 - __main__ - INFO - Login successful for user: admin
+2025-12-18 14:05:23,741 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:23] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 14:05:23,770 - __main__ - INFO - User admin accessing index page
+2025-12-18 14:05:23,836 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:23] "GET /index HTTP/1.1" 200 -
+2025-12-18 14:05:23,882 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:23] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 14:05:24,098 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:05:24,238 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:24] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 14:05:36,890 - __main__ - INFO - User admin uploading file: Book2.xlsx
+2025-12-18 14:05:37,020 - __main__ - INFO - Reading Excel data for file: Book2.xlsx
+2025-12-18 14:05:37,071 - __main__ - INFO - Found 1 intraday trades
+2025-12-18 14:05:37,196 - __main__ - INFO - Found 3 long-term trades
+2025-12-18 14:05:37,197 - __main__ - INFO - Processing long-term capital gains
+2025-12-18 14:05:37,197 - __main__ - INFO - Processing intraday profit/loss
+2025-12-18 14:05:37,198 - __main__ - INFO - Successfully processed file: Book2.xlsx. Intraday: 1, Long-term: 3
+2025-12-18 14:05:37,200 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:37] "POST /convert HTTP/1.1" 200 -
+2025-12-18 14:05:44,748 - __main__ - INFO - User admin logged out
+2025-12-18 14:05:44,751 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:44] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-18 14:05:44,770 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:44] "GET /login HTTP/1.1" 200 -
+2025-12-18 14:05:44,859 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:05:44,911 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:05:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 14:07:31,692 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 14:07:31,721 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app2.py', reloading
+2025-12-18 14:07:31,745 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app3.py', reloading
+2025-12-18 14:07:31,778 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app4.py', reloading
+2025-12-18 14:07:31,803 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app5.py', reloading
+2025-12-18 14:07:31,832 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app8.py', reloading
+2025-12-18 14:07:31,856 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app10.py', reloading
+2025-12-18 14:07:31,878 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app12.py', reloading
+2025-12-18 14:07:31,898 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app13.py', reloading
+2025-12-18 14:07:31,919 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app14.py', reloading
+2025-12-18 14:07:32,182 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 14:07:34,201 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 14:07:34,211 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 14:08:19,029 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app15.py', reloading
+2025-12-18 14:08:19,030 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 14:08:19,620 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 14:12:37,856 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 14:12:37,856 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 14:12:37,873 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 14:12:38,712 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 14:12:38,718 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 14:12:44,047 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 14:12:44,048 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:44] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 14:12:44,070 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:44] "GET /login HTTP/1.1" 200 -
+2025-12-18 14:12:44,242 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:12:44,270 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 14:12:48,858 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 14:12:48,859 - __main__ - INFO - Login successful for user: admin
+2025-12-18 14:12:48,861 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 14:12:48,871 - __main__ - INFO - User admin accessing index page
+2025-12-18 14:12:48,881 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:48] "GET /index HTTP/1.1" 200 -
+2025-12-18 14:12:48,914 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:48] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 14:12:49,069 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:12:49,090 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 14:12:55,016 - __main__ - INFO - User admin uploading file: Book2.xlsx
+2025-12-18 14:12:55,065 - __main__ - INFO - Reading Excel data for file: Book2.xlsx
+2025-12-18 14:12:55,090 - __main__ - INFO - Found 1 intraday trades
+2025-12-18 14:12:55,177 - __main__ - INFO - Found 3 long-term trades
+2025-12-18 14:12:55,177 - __main__ - INFO - Processing long-term capital gains
+2025-12-18 14:12:55,178 - __main__ - INFO - Processing intraday profit/loss
+2025-12-18 14:12:55,178 - __main__ - INFO - Successfully processed file: Book2.xlsx. Intraday: 1, Long-term: 3
+2025-12-18 14:12:55,179 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:55] "POST /convert HTTP/1.1" 200 -
+2025-12-18 14:12:58,985 - __main__ - INFO - User admin logged out
+2025-12-18 14:12:58,987 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-18 14:12:58,999 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:58] "GET /login HTTP/1.1" 200 -
+2025-12-18 14:12:59,057 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:12:59,101 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:12:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 14:14:16,230 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 14:14:16,232 - __main__ - INFO - Login successful for user: admin
+2025-12-18 14:14:16,235 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 14:14:16,249 - __main__ - INFO - User admin accessing index page
+2025-12-18 14:14:16,251 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:16] "GET /index HTTP/1.1" 200 -
+2025-12-18 14:14:16,277 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:16] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 14:14:16,410 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:14:16,460 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:16] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 14:14:25,811 - __main__ - INFO - User admin uploading file: Book2.xlsx
+2025-12-18 14:14:25,889 - __main__ - INFO - Reading Excel data for file: Book2.xlsx
+2025-12-18 14:14:25,937 - __main__ - INFO - Found 1 intraday trades
+2025-12-18 14:14:26,084 - __main__ - INFO - Found 3 long-term trades
+2025-12-18 14:14:26,085 - __main__ - INFO - Processing long-term capital gains
+2025-12-18 14:14:26,088 - __main__ - INFO - Processing intraday profit/loss
+2025-12-18 14:14:26,089 - __main__ - INFO - Successfully processed file: Book2.xlsx. Intraday: 1, Long-term: 3
+2025-12-18 14:14:26,092 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:26] "POST /convert HTTP/1.1" 200 -
+2025-12-18 14:14:39,584 - __main__ - INFO - User admin logged out
+2025-12-18 14:14:39,586 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:39] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-18 14:14:39,598 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:39] "GET /login HTTP/1.1" 200 -
+2025-12-18 14:14:39,715 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 14:14:39,791 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 14:14:39] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:09:43,554 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 18:09:43,555 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 18:09:43,591 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:09:44,730 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:09:44,740 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:09:50,853 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 18:09:50,855 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:09:50] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 18:09:50,924 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:09:50] "GET /login HTTP/1.1" 200 -
+2025-12-18 18:09:52,037 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 18:09:52,062 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 18:09:52,070 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-12-18 18:09:52,079 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 18:09:52,082 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-12-18 18:09:52,087 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 18:09:52,098 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 18:09:52,165 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:09:52] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:09:53,122 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:09:56,130 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:09:56,147 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:09:56,275 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 18:09:56,280 - __main__ - INFO - Login successful for user: admin
+2025-12-18 18:09:56,287 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:09:56] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 18:09:56,312 - __main__ - INFO - User admin accessing index page
+2025-12-18 18:09:56,339 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:09:56] "GET /index HTTP/1.1" 200 -
+2025-12-18 18:09:56,381 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:09:56] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 18:09:56,553 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 18:09:56,631 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:09:56] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:10:09,825 - __main__ - INFO - User admin uploading file: Book2.xlsx
+2025-12-18 18:10:09,940 - __main__ - INFO - Reading Excel data for file: Book2.xlsx
+2025-12-18 18:10:09,974 - __main__ - INFO - Found 1 intraday trades
+2025-12-18 18:10:10,073 - __main__ - INFO - Found 3 long-term trades
+2025-12-18 18:10:10,074 - __main__ - INFO - Processing long-term capital gains
+2025-12-18 18:10:10,075 - __main__ - INFO - Processing intraday profit/loss
+2025-12-18 18:10:10,076 - __main__ - INFO - Successfully processed file: Book2.xlsx. Intraday: 1, Long-term: 3
+2025-12-18 18:10:10,078 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:10:10] "POST /convert HTTP/1.1" 200 -
+2025-12-18 18:14:41,113 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 18:14:41,115 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 18:14:41,156 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:14:42,103 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:14:42,111 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:14:46,569 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 18:14:46,571 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:14:46] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 18:14:46,601 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:14:46] "GET /login HTTP/1.1" 200 -
+2025-12-18 18:14:47,693 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 18:14:47,718 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:14:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:14:52,724 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 18:14:52,725 - __main__ - INFO - Login successful for user: admin
+2025-12-18 18:14:52,729 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:14:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 18:14:52,750 - __main__ - INFO - User admin accessing index page
+2025-12-18 18:14:52,767 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:14:52] "GET /index HTTP/1.1" 200 -
+2025-12-18 18:14:52,824 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:14:52] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 18:14:53,111 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 18:14:53,162 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:14:53] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:15:01,086 - __main__ - INFO - User admin uploading file: Book2.xlsx
+2025-12-18 18:15:01,163 - __main__ - INFO - Reading Excel data for file: Book2.xlsx
+2025-12-18 18:15:01,207 - __main__ - INFO - Found 1 intraday trades
+2025-12-18 18:15:01,407 - __main__ - INFO - Found 3 long-term trades
+2025-12-18 18:15:01,408 - __main__ - INFO - Processing long-term capital gains
+2025-12-18 18:15:01,409 - __main__ - INFO - Processing intraday profit/loss
+2025-12-18 18:15:01,411 - __main__ - INFO - Successfully processed file: Book2.xlsx. Intraday: 1, Long-term: 3
+2025-12-18 18:15:01,413 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:15:01] "POST /convert HTTP/1.1" 200 -
+2025-12-18 18:15:22,901 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 18:15:22,972 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 18:15:23,004 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 18:15:23,009 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 18:15:23,015 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 18:15:23,019 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 18:15:23,030 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-12-18 18:15:23,040 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-18 18:15:23,044 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-12-18 18:15:23,062 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-18 18:15:23,094 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 18:15:23,156 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 18:15:23,289 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 18:15:23,568 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:15:24,432 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:15:24,436 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:17:00,349 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 18:17:00,350 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:17:00] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 18:17:00,428 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:17:00] "GET /login HTTP/1.1" 200 -
+2025-12-18 18:17:00,522 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 18:17:00,553 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:17:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:18:24,646 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 18:18:24,647 - __main__ - INFO - Login successful for user: admin
+2025-12-18 18:18:24,650 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:18:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 18:18:24,660 - __main__ - INFO - User admin accessing index page
+2025-12-18 18:18:24,672 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:18:24] "GET /index HTTP/1.1" 200 -
+2025-12-18 18:18:24,710 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:18:24] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 18:18:24,916 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 18:18:24,944 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:18:24] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:18:34,457 - __main__ - INFO - User admin uploading file: Book2.xlsx
+2025-12-18 18:18:34,589 - __main__ - INFO - Reading Excel data for file: Book2.xlsx
+2025-12-18 18:18:34,650 - __main__ - INFO - Found 1 intraday trades
+2025-12-18 18:18:34,802 - __main__ - INFO - Found 3 long-term trades
+2025-12-18 18:18:34,806 - __main__ - INFO - Processing long-term capital gains
+2025-12-18 18:18:34,808 - __main__ - INFO - Processing intraday profit/loss
+2025-12-18 18:18:34,810 - __main__ - INFO - Successfully processed file: Book2.xlsx. Intraday: 1, Long-term: 3
+2025-12-18 18:18:34,813 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:18:34] "POST /convert HTTP/1.1" 200 -
+2025-12-18 18:19:00,207 - __main__ - INFO - User admin logged out
+2025-12-18 18:19:00,209 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:19:00] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-18 18:19:00,217 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:19:00] "GET /login HTTP/1.1" 200 -
+2025-12-18 18:19:00,265 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 18:19:00,294 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 18:19:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 18:22:29,686 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:22:29,687 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:22:30,959 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:22:32,820 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:22:32,832 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:22:37,885 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:22:37,887 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:22:38,199 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:22:39,977 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:22:39,985 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:22:47,278 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:22:47,282 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:22:48,313 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:22:50,842 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:22:50,868 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:23:33,584 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:23:33,586 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:23:34,270 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:23:36,253 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:23:36,268 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:24:41,186 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:41,188 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:41,687 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:24:42,599 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:24:42,605 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:24:46,993 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:46,994 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:47,853 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:24:48,810 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:24:48,817 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:24:49,774 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:49,777 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:50,013 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:24:51,049 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:24:51,056 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:24:52,302 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:52,306 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:24:53,235 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:24:54,315 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:24:54,323 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:29:04,557 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:29:04,558 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:29:05,093 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:29:06,029 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:29:06,033 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 18:29:06,460 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:29:06,462 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 18:29:07,182 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 18:29:08,070 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 18:29:08,076 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 19:44:21,347 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 19:44:21,348 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 19:44:21,365 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 19:44:22,010 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 19:44:22,015 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 19:44:26,694 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 19:44:26,695 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:44:26] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 19:44:26,717 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:44:26] "GET /login HTTP/1.1" 200 -
+2025-12-18 19:44:27,343 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 19:44:27,349 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-12-18 19:44:27,362 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:44:27] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 19:44:28,142 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 19:44:29,297 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 19:44:29,305 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 19:44:33,708 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 19:44:33,709 - __main__ - INFO - Login successful for user: admin
+2025-12-18 19:44:33,714 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:44:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 19:44:33,724 - __main__ - INFO - User admin accessing index page
+2025-12-18 19:44:33,741 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:44:33] "GET /index HTTP/1.1" 200 -
+2025-12-18 19:44:33,768 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:44:33] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 19:44:33,909 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 19:44:33,940 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:44:33] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 19:49:54,920 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 19:49:54,920 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 19:49:54,931 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 19:49:55,373 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 19:49:55,376 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 19:49:59,726 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-18 19:49:59,727 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:49:59] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 19:49:59,771 - __main__ - INFO - User admin accessing index page
+2025-12-18 19:49:59,773 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:49:59] "GET /index HTTP/1.1" 200 -
+2025-12-18 19:50:00,166 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 19:50:00,176 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:50:00] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 19:55:02,492 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 19:55:02,492 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 19:55:02,504 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 19:55:02,934 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 19:55:02,936 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 19:55:05,991 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-18 19:55:05,992 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:55:05] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 19:55:06,054 - __main__ - INFO - User admin accessing index page
+2025-12-18 19:55:06,058 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:55:06] "GET /index HTTP/1.1" 200 -
+2025-12-18 19:55:06,509 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 19:55:06,518 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:55:06] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 19:56:26,393 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 19:56:26,393 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 19:56:26,414 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 19:56:27,036 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 19:56:27,039 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 19:56:29,713 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 19:56:29,714 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:56:29] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 19:56:29,729 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:56:29] "GET /login HTTP/1.1" 200 -
+2025-12-18 19:56:30,285 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 19:56:30,299 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:56:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 19:56:35,351 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 19:56:35,351 - __main__ - INFO - Login successful for user: admin
+2025-12-18 19:56:35,353 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:56:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 19:56:35,360 - __main__ - INFO - User admin accessing index page
+2025-12-18 19:56:35,373 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:56:35] "GET /index HTTP/1.1" 200 -
+2025-12-18 19:56:35,405 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:56:35] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 19:56:35,531 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 19:56:35,550 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 19:56:35] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:01:01,057 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 20:01:01,059 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 20:01:01,059 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-18 20:01:01,471 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:01:01,918 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:01:01,965 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:01:01,967 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:01:02,360 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:01:02,363 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:01:04,059 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\functools.py', reloading
+2025-12-18 20:01:04,060 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\functools.py', reloading
+2025-12-18 20:01:04,448 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:01:04,941 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:01:04,943 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:01:05,061 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:01:05,506 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:01:05,509 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:01:08,923 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 20:01:08,923 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 20:01:08,934 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:01:09,392 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:01:09,395 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:01:12,725 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 20:01:12,727 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:12] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 20:01:12,790 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:12] "GET /login HTTP/1.1" 200 -
+2025-12-18 20:01:12,877 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:01:12,890 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:12] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:01:19,398 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 20:01:19,398 - __main__ - INFO - Login successful for user: admin
+2025-12-18 20:01:19,400 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:19] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 20:01:19,406 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:01:19,414 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:19] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:01:19,487 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:01:19,508 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:01:30,742 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:01:30,744 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:30] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:01:30,787 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:01:30,812 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:01:31,314 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:01:31,315 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:31] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:01:31,361 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:01:31,392 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:01:31,533 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:01:31,534 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:31] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:01:31,578 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:01:31,611 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:01:31,905 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:01:31,906 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:31] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:01:31,948 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:01:31,973 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:01:31] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:04:40,990 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 20:04:40,990 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 20:04:41,000 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:04:41,466 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:04:41,469 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:04:44,479 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-18 20:04:44,480 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:04:44] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 20:04:44,544 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:04:44,546 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:04:44] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:04:44,823 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:04:44,830 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:04:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:06:21,868 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 20:06:21,869 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 20:06:21,882 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:06:22,322 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:06:22,325 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:06:25,954 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 20:06:25,954 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:06:25] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 20:06:25,969 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:06:25] "GET /login HTTP/1.1" 200 -
+2025-12-18 20:06:26,508 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:06:26,520 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:06:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:06:30,033 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 20:06:30,034 - __main__ - INFO - Login successful for user: admin
+2025-12-18 20:06:30,036 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:06:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 20:06:30,043 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:06:30,048 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:06:30] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:06:30,171 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:06:30,201 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:06:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:07:12,459 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 20:07:12,459 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 20:07:12,472 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:07:12,935 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:07:12,937 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:07:15,135 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-18 20:07:15,136 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:07:15] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 20:07:15,199 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:07:15,210 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:07:15] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:07:15,233 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:07:15] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 20:07:15,462 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:07:15,473 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:07:15] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:07:34,492 - __main__ - INFO - User admin uploading file: Book2.xlsx
+2025-12-18 20:07:34,524 - __main__ - INFO - Reading Excel data for file: Book2.xlsx
+2025-12-18 20:07:34,535 - __main__ - INFO - Found 1 intraday trades
+2025-12-18 20:07:34,570 - __main__ - INFO - Found 3 long-term trades
+2025-12-18 20:07:34,570 - __main__ - INFO - Processing long-term capital gains
+2025-12-18 20:07:34,571 - __main__ - INFO - Processing intraday profit/loss
+2025-12-18 20:07:34,571 - __main__ - INFO - Successfully processed file: Book2.xlsx. Intraday: 1, Long-term: 3
+2025-12-18 20:07:34,572 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:07:34] "POST /convert HTTP/1.1" 200 -
+2025-12-18 20:08:11,508 - __main__ - INFO - User admin logged out
+2025-12-18 20:08:11,509 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:08:11] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-18 20:08:11,520 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:08:11] "GET /login HTTP/1.1" 200 -
+2025-12-18 20:08:11,554 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:08:11,583 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:08:11] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:08:13,177 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 20:08:13,178 - __main__ - INFO - Login successful for user: admin
+2025-12-18 20:08:13,179 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:08:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 20:08:13,187 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:08:13,189 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:08:13] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:08:13,201 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:08:13] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 20:08:13,221 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:08:13,250 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:08:13] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:09:02,409 - __main__ - INFO - User admin logged out
+2025-12-18 20:09:02,410 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:09:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-18 20:09:02,421 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:09:02] "GET /login HTTP/1.1" 200 -
+2025-12-18 20:09:02,488 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:09:02,529 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:09:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:09:05,830 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 20:09:05,830 - __main__ - INFO - Login successful for user: admin
+2025-12-18 20:09:05,831 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:09:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 20:09:05,838 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:09:05,839 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:09:05] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:09:05,849 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:09:05] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 20:09:05,863 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:09:05,888 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:09:05] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:13:45,689 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 20:13:45,689 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 20:13:45,701 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:13:46,149 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:13:46,152 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:13:48,936 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-18 20:13:48,938 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:13:48] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 20:13:48,984 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:13:48,987 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:13:48] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:13:49,409 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:13:49,418 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:13:49] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:18:33,175 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 20:18:33,176 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 20:18:33,188 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:33,704 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:33,707 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:37,806 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-18 20:18:37,807 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:18:37] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 20:18:37,866 - __main__ - INFO - User admin accessing index page
+2025-12-18 20:18:37,872 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:18:37] "GET /index HTTP/1.1" 200 -
+2025-12-18 20:18:38,019 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:18:38] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 20:18:38,219 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 20:18:38,219 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 20:18:38,219 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 20:18:38,220 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 20:18:38,220 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 20:18:38,220 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 20:18:38,220 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 20:18:38,222 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,222 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,222 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,222 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,222 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,222 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,223 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,223 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 20:18:38,255 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,256 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,256 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,256 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,256 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,257 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,257 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,257 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 20:18:38,277 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 20:18:38,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 20:18:38,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 20:18:38,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 20:18:38,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 20:18:38,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 20:18:38,278 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 20:18:38,281 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 20:18:38,281 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 20:18:38,281 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 20:18:38,281 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 20:18:38,281 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 20:18:38,281 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 20:18:38,285 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 20:18:38,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 20:18:38,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 20:18:38,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 20:18:38,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 20:18:38,286 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 20:18:38,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 20:18:38,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 20:18:38,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 20:18:38,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 20:18:38,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 20:18:38,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 20:18:38,288 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 20:18:38,295 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-12-18 20:18:38,295 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-12-18 20:18:38,295 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-12-18 20:18:38,295 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-12-18 20:18:38,295 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-12-18 20:18:38,301 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-18 20:18:38,302 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-18 20:18:38,302 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-18 20:18:38,302 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-18 20:18:38,302 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-18 20:18:38,307 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-12-18 20:18:38,307 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-12-18 20:18:38,307 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-12-18 20:18:38,325 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 20:18:38,329 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-18 20:18:38,329 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-18 20:18:38,329 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-18 20:18:38,330 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-18 20:18:38,336 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 20:18:38] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 20:18:38,341 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-12-18 20:18:38,341 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-12-18 20:18:38,341 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-12-18 20:18:38,341 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-12-18 20:18:38,341 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-12-18 20:18:38,347 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 20:18:38,347 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 20:18:38,347 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 20:18:38,347 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 20:18:38,347 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 20:18:38,347 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 20:18:38,350 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 20:18:38,350 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 20:18:38,350 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 20:18:38,350 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 20:18:38,350 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 20:18:38,350 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 20:18:38,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 20:18:38,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 20:18:38,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 20:18:38,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 20:18:38,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 20:18:38,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 20:18:38,376 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 20:18:38,406 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,407 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,407 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,408 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,408 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,408 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,408 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,409 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 20:18:38,468 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 20:18:38,468 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 20:18:38,468 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 20:18:38,468 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 20:18:38,468 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 20:18:38,468 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 20:18:38,468 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 20:18:38,532 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 20:18:38,532 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 20:18:38,532 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 20:18:38,532 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 20:18:38,532 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 20:18:38,532 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 20:18:38,532 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 20:18:38,641 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-12-18 20:18:38,641 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-12-18 20:18:38,641 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-12-18 20:18:38,646 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-12-18 20:18:38,646 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-12-18 20:18:38,646 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-12-18 20:18:38,651 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
+2025-12-18 20:18:38,651 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
+2025-12-18 20:18:38,651 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
+2025-12-18 20:18:38,651 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
+2025-12-18 20:18:38,651 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
+2025-12-18 20:18:38,678 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:38,680 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+2025-12-18 20:18:38,681 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+2025-12-18 20:18:38,681 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+2025-12-18 20:18:38,685 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:38,691 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:38,704 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2025-12-18 20:18:38,704 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2025-12-18 20:18:38,704 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2025-12-18 20:18:38,720 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\mixins.py', reloading
+2025-12-18 20:18:38,720 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\mixins.py', reloading
+2025-12-18 20:18:38,720 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\mixins.py', reloading
+2025-12-18 20:18:38,720 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\mixins.py', reloading
+2025-12-18 20:18:38,746 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\file_storage.py', reloading
+2025-12-18 20:18:38,746 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\file_storage.py', reloading
+2025-12-18 20:18:38,746 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\file_storage.py', reloading
+2025-12-18 20:18:38,746 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\file_storage.py', reloading
+2025-12-18 20:18:38,876 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:38,931 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:39,039 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:39,088 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:39,184 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 20:18:39,595 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:39,601 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:39,601 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:39,607 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:39,612 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:39,616 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:39,776 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:39,787 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:39,884 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:39,892 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:40,061 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:40,068 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:40,140 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:40,148 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 20:18:40,273 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 20:18:40,280 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 21:16:32,832 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 21:16:32,832 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 21:16:32,845 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 21:16:33,283 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 21:16:33,287 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 21:16:37,454 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 21:16:37,456 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:16:37] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 21:16:37,475 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:16:37] "GET /login HTTP/1.1" 200 -
+2025-12-18 21:16:37,744 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 21:16:37,749 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-12-18 21:16:37,759 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:16:37] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 21:16:38,424 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 21:16:38,907 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 21:16:38,910 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 21:16:41,748 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 21:16:41,750 - __main__ - INFO - Login successful for user: admin
+2025-12-18 21:16:41,751 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:16:41] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 21:16:41,760 - __main__ - INFO - User admin accessing index page
+2025-12-18 21:16:41,782 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:16:41] "GET /index HTTP/1.1" 200 -
+2025-12-18 21:16:41,811 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:16:41] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-18 21:16:41,990 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 21:16:42,024 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:16:42] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 21:23:55,959 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-18 21:23:55,965 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-18 21:23:55,984 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-18 21:23:55,998 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-18 21:23:56,000 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-18 21:23:56,002 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-18 21:23:56,003 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\request.py', reloading
+2025-12-18 21:23:56,007 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\request.py', reloading
+2025-12-18 21:23:56,011 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-18 21:23:56,014 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-12-18 21:23:56,022 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-18 21:23:56,030 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\templating.py', reloading
+2025-12-18 21:23:56,032 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\__init__.py', reloading
+2025-12-18 21:23:56,033 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\environment.py', reloading
+2025-12-18 21:23:56,054 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\helpers.py', reloading
+2025-12-18 21:23:56,060 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-18 21:23:56,085 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\utils.py', reloading
+2025-12-18 21:23:56,123 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\config.py', reloading
+2025-12-18 21:23:56,176 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\typing.py', reloading
+2025-12-18 21:23:56,178 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\__init__.py', reloading
+2025-12-18 21:23:56,179 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\headers.py', reloading
+2025-12-18 21:23:56,189 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\structures.py', reloading
+2025-12-18 21:23:56,202 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\_internal.py', reloading
+2025-12-18 21:23:56,208 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\mixins.py', reloading
+2025-12-18 21:23:56,236 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\datastructures\\file_storage.py', reloading
+2025-12-18 21:23:56,468 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 21:23:56,824 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 21:23:56,824 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 21:23:56,835 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 21:23:56,939 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 21:23:56,941 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 21:23:57,285 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 21:23:57,288 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 21:23:59,377 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-18 21:23:59,378 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:23:59] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 21:23:59,447 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:23:59] "GET /login HTTP/1.1" 200 -
+2025-12-18 21:23:59,701 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 21:23:59,714 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:23:59] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 21:24:03,200 - __main__ - INFO - Login attempt for username: admin
+2025-12-18 21:24:03,201 - __main__ - INFO - Login successful for user: admin
+2025-12-18 21:24:03,203 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:24:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-18 21:24:03,211 - __main__ - INFO - User admin accessing index page
+2025-12-18 21:24:03,219 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:24:03] "GET /index HTTP/1.1" 200 -
+2025-12-18 21:24:03,276 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 21:24:03,315 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:24:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-18 21:30:01,639 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-18 21:30:01,639 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-18 21:30:01,649 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-18 21:30:02,174 - werkzeug - WARNING -  * Debugger is active!
+2025-12-18 21:30:02,177 - werkzeug - INFO -  * Debugger PIN: 121-978-913
+2025-12-18 21:30:03,965 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-18 21:30:03,966 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:30:03] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-18 21:30:04,028 - __main__ - INFO - User admin accessing index page
+2025-12-18 21:30:04,038 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:30:04] "GET /index HTTP/1.1" 200 -
+2025-12-18 21:30:04,362 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-18 21:30:04,372 - werkzeug - INFO - 127.0.0.1 - - [18/Dec/2025 21:30:04] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-19 11:58:45,153 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 11:58:45,155 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 11:58:45,180 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 11:58:47,198 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 11:58:47,204 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 11:58:47,411 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-19 11:58:47,416 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:58:47] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 11:58:47,618 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:58:47] "GET /login HTTP/1.1" 200 -
+2025-12-19 11:58:50,942 - __main__ - INFO - Login attempt for username: admin
+2025-12-19 11:58:50,944 - __main__ - INFO - Login successful for user: admin
+2025-12-19 11:58:50,950 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:58:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 11:58:50,965 - __main__ - INFO - User admin accessing index page
+2025-12-19 11:58:50,985 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:58:50] "GET /index HTTP/1.1" 200 -
+2025-12-19 11:59:23,044 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\functools.py', reloading
+2025-12-19 11:59:23,633 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 11:59:25,085 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 11:59:25,093 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 11:59:29,460 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\openpyxl\\__init__.py', reloading
+2025-12-19 11:59:30,311 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 11:59:30,314 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 11:59:30,384 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 11:59:30,454 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 11:59:32,085 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 11:59:32,097 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 11:59:32,103 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 11:59:32,105 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 11:59:40,680 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-19 11:59:40,683 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:59:40] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 11:59:40,891 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:59:40] "GET /login HTTP/1.1" 200 -
+2025-12-19 11:59:43,637 - __main__ - INFO - Login attempt for username: admin
+2025-12-19 11:59:43,639 - __main__ - INFO - Login successful for user: admin
+2025-12-19 11:59:43,642 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:59:43] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 11:59:43,671 - __main__ - INFO - User admin accessing index page
+2025-12-19 11:59:43,708 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:59:43] "GET /index HTTP/1.1" 200 -
+2025-12-19 11:59:43,784 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 11:59:43] "GET /static/tcai_logo.jpeg HTTP/1.1" 200 -
+2025-12-19 12:00:39,727 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 12:00:39,730 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:00:39,851 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 12:00:42,017 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-19 12:00:42,020 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:00:42] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 12:00:42,201 - __main__ - INFO - User admin accessing index page
+2025-12-19 12:00:42,208 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:00:42] "GET /index HTTP/1.1" 200 -
+2025-12-19 12:00:43,240 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 12:00:43,262 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 12:02:22,903 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 12:02:22,904 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 12:02:22,978 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 12:02:25,046 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-19 12:02:25,048 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:02:25] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 12:02:25,224 - __main__ - INFO - User admin accessing index page
+2025-12-19 12:02:25,243 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:02:25] "GET /index HTTP/1.1" 200 -
+2025-12-19 12:02:25,596 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 12:02:25,606 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 12:02:25] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 12:02:25,608 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 12:05:11,896 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 12:05:11,897 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 12:05:11,897 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app2.py', reloading
+2025-12-19 12:05:11,898 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 12:05:11,898 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app2.py', reloading
+2025-12-19 12:05:11,900 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app2.py', reloading
+2025-12-19 12:05:12,871 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 12:05:12,872 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 12:05:12,898 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:03:19,903 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 13:03:19,904 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 13:03:19,937 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:03:20,756 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 13:03:20,768 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 13:03:23,504 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 13:03:23] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 13:04:26,389 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 13:04:26] "[33mGET / HTTP/1.1[0m" 404 -
+2025-12-19 13:10:50,550 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_duplicate.py', reloading
+2025-12-19 13:10:50,553 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_main.py', reloading
+2025-12-19 13:10:50,910 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:10:52,097 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 13:10:52,101 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 13:11:43,161 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 13:11:43,164 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 13:11:43,476 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:11:44,522 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 13:11:44,525 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 13:11:47,622 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 13:11:47,622 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 13:11:48,756 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:11:49,386 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 13:11:49,389 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 13:11:55,447 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 13:11:55,448 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 13:11:55,471 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:11:56,564 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 13:11:56,570 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 13:11:59,999 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-19 13:12:00,001 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 13:12:00] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 13:12:00,097 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 13:12:00] "GET /login HTTP/1.1" 200 -
+2025-12-19 13:12:13,801 - __main__ - INFO - Activity: admin - login
+2025-12-19 13:12:13,805 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 13:12:13] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 13:12:13,845 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 13:12:13] "GET /index HTTP/1.1" 200 -
+2025-12-19 13:12:13,900 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 13:12:13] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 13:18:16,315 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\logging\\__init__.py', reloading
+2025-12-19 13:18:16,316 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\logging\\__init__.py', reloading
+2025-12-19 13:18:16,648 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:18:17,423 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 13:18:17,493 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 13:18:17,497 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 13:18:18,179 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 13:18:18,183 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:06:40,555 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 14:06:40,556 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 14:06:40,573 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:06:41,018 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:06:41,020 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:06:44,294 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-19 14:06:44,296 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:06:44] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 14:06:44,383 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:06:44] "GET /login HTTP/1.1" 200 -
+2025-12-19 14:06:47,625 - __main__ - INFO - Activity: admin - login
+2025-12-19 14:06:47,626 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:06:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 14:06:47,646 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:06:47] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:06:47,683 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:06:47] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 14:09:33,538 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 14:09:33,538 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 14:09:33,548 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:09:33,955 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:09:33,957 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:09:39,792 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-19 14:09:39,792 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:09:39] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 14:09:39,849 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:09:39] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:14:25,291 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 14:14:25,291 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 14:14:25,301 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:14:25,709 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:14:25,712 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:14:29,545 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-19 14:14:29,546 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:14:29] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 14:14:29,561 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:14:29] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:14:29,742 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:14:29] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 14:18:55,581 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 14:18:55,581 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 14:18:55,592 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:18:56,005 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:18:56,008 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:18:59,049 - __main__ - INFO - User admin accessing home, redirecting to index
+2025-12-19 14:18:59,050 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:18:59] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 14:18:59,158 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:18:59] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:18:59,338 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:18:59] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 14:19:00,915 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-19 14:19:00,915 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-19 14:19:00,915 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-19 14:19:00,917 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\__init__.py', reloading
+2025-12-19 14:19:00,929 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-19 14:19:00,929 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-19 14:19:00,929 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-19 14:19:00,930 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\app.py', reloading
+2025-12-19 14:19:01,036 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-19 14:19:01,036 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\scaffold.py', reloading
+2025-12-19 14:19:01,162 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-19 14:19:01,162 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-19 14:19:01,163 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\globals.py', reloading
+2025-12-19 14:19:01,178 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-19 14:19:01,178 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\wrappers.py', reloading
+2025-12-19 14:19:01,188 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\__init__.py', reloading
+2025-12-19 14:19:01,255 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\json\\__init__.py', reloading
+2025-12-19 14:19:01,291 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\wrappers\\response.py', reloading
+2025-12-19 14:19:01,300 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:19:01,320 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\werkzeug\\sansio\\response.py', reloading
+2025-12-19 14:19:01,380 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:19:01,482 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\flask\\sessions.py', reloading
+2025-12-19 14:19:01,546 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:19:01,741 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:19:03,082 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:19:03,089 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:19:03,126 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:19:03,135 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:19:03,255 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:19:03,262 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:19:03,364 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:19:03,373 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:20,943 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:20,943 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:20,943 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:20,943 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:20,944 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:20,944 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:20,944 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:20,944 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:21,116 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:21,553 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:21,557 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:21,808 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:21,838 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:21,963 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:22,282 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:22,284 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:22,312 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:22,316 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:22,397 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:22,399 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:22,540 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:22,540 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:22,540 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:22,542 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:22,542 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:22,542 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:22,542 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:23:22,645 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:23,078 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:23,083 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:23,378 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:23,419 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:23,490 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:23:24,316 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:24,323 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:24,417 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:24,423 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:23:24,575 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:23:24,582 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:10,678 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,678 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,678 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,678 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,680 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,680 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,680 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,680 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:10,899 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:10,958 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:11,145 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:11,329 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:11,332 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:11,376 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:11,378 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:11,546 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:11,549 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:11,605 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:12,002 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:12,005 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:14,245 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:14,245 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:14,245 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:14,247 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:14,247 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:14,247 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:14,247 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:27:14,410 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:14,513 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:14,627 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:14,916 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:14,918 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:14,961 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:14,964 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:15,075 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:15,078 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:15,090 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:15,507 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:15,509 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:24,759 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 14:27:24,759 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 14:27:24,769 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:27:25,167 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:27:25,169 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:27:28,907 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-19 14:27:28,908 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:27:28] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 14:27:28,959 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:27:28] "GET /login HTTP/1.1" 200 -
+2025-12-19 14:27:36,050 - __main__ - INFO - Activity: admin - login
+2025-12-19 14:27:36,053 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:27:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 14:27:36,082 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:27:36] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:27:36,100 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:27:36] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 14:28:14,275 - __main__ - INFO - Activity: admin - logout
+2025-12-19 14:28:14,276 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:28:14] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-19 14:28:14,282 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:28:14] "GET /login HTTP/1.1" 200 -
+2025-12-19 14:28:15,916 - __main__ - INFO - Activity: admin - login
+2025-12-19 14:28:15,918 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:28:15] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 14:28:15,926 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:28:15] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:28:15,942 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:28:15] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 14:28:18,637 - __main__ - INFO - Activity: admin - logout
+2025-12-19 14:28:18,638 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:28:18] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-19 14:28:18,643 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:28:18] "GET /login HTTP/1.1" 200 -
+2025-12-19 14:28:31,872 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:31,872 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:31,872 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:31,872 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:31,873 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:31,873 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:31,874 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:31,874 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:28:32,169 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:32,217 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:32,326 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:32,408 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:32,667 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:32,670 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:32,701 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:32,704 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:32,763 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:32,799 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:32,801 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:32,864 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:32,866 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:33,176 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:33,178 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:36,154 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,154 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,154 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,154 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,154 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,156 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,156 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,157 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,157 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:28:36,259 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:36,656 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:36,658 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:36,764 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:36,828 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:36,897 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:36,979 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:28:37,300 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:37,303 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:37,323 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:37,326 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:37,372 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:37,374 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:28:37,429 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:28:37,432 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:29:47,173 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_main.py', reloading
+2025-12-19 14:29:47,173 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_main.py', reloading
+2025-12-19 14:29:47,174 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_main.py', reloading
+2025-12-19 14:29:47,174 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_main.py', reloading
+2025-12-19 14:29:47,186 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_duplicate.py', reloading
+2025-12-19 14:29:47,186 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_duplicate.py', reloading
+2025-12-19 14:29:47,186 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_duplicate.py', reloading
+2025-12-19 14:29:47,186 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app_duplicate.py', reloading
+2025-12-19 14:29:47,518 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:29:47,576 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:29:47,635 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:29:47,684 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:29:47,909 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:29:48,347 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:29:48,352 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:29:48,409 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:29:48,414 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:29:48,462 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:29:48,467 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:29:48,486 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:29:48,492 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:29:48,649 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:29:48,654 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:31:18,094 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,095 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,096 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,096 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,097 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,098 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,098 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,098 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,099 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:18,668 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:18,709 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:18,747 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:18,763 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:18,901 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:19,332 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:31:19,335 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:31:19,358 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:31:19,363 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:31:19,404 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:31:19,407 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:31:19,455 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:31:19,461 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:31:19,519 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:31:19,522 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:31:47,835 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:31:47,835 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:31:47,835 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:31:47,836 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\app.py', reloading
+2025-12-19 14:31:47,873 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:47,873 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:47,873 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:47,873 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\xlsx\\json\\converter\\converter.py', reloading
+2025-12-19 14:31:48,526 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:48,561 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:48,611 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:48,661 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:31:48,722 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:33:17,646 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 14:33:17,646 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 14:33:17,656 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:33:18,061 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:33:18,063 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:33:21,479 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-19 14:33:21,480 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:33:21] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 14:33:21,499 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:33:21] "GET /login HTTP/1.1" 200 -
+2025-12-19 14:33:22,005 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-19 14:33:22,014 - werkzeug - INFO -  * Detected change in 'C:\\Users\\manoj\\AppData\\Local\\Programs\\Python\\Python313\\Lib\\site-packages\\jinja2\\loaders.py', reloading
+2025-12-19 14:33:22,025 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:33:22] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-19 14:33:22,169 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:33:22,570 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:33:22,573 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:33:26,574 - __main__ - INFO - Activity: admin - login
+2025-12-19 14:33:26,577 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:33:26] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 14:33:26,618 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:33:26] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:33:26,648 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:33:26] "GET /static/tcai_logo.jpeg HTTP/1.1" 200 -
+2025-12-19 14:33:26,788 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-19 14:33:26,823 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:33:26] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-19 14:37:56,587 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2025-12-19 14:37:56,587 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-12-19 14:37:56,596 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-12-19 14:37:57,013 - werkzeug - WARNING -  * Debugger is active!
+2025-12-19 14:37:57,015 - werkzeug - INFO -  * Debugger PIN: 107-161-954
+2025-12-19 14:38:01,439 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2025-12-19 14:38:01,441 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:38:01] "[32mGET / HTTP/1.1[0m" 302 -
+2025-12-19 14:38:01,455 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:38:01] "GET /login HTTP/1.1" 200 -
+2025-12-19 14:38:01,990 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-19 14:38:02,014 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:38:02] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-19 14:39:36,403 - __main__ - INFO - Activity: admin - login
+2025-12-19 14:39:36,406 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:39:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2025-12-19 14:39:36,444 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:39:36] "GET /index HTTP/1.1" 200 -
+2025-12-19 14:39:36,471 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:39:36] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2025-12-19 14:39:36,944 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-19 14:39:36,997 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:39:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2025-12-19 14:41:17,208 - __main__ - INFO - Activity: admin - logout
+2025-12-19 14:41:17,210 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:41:17] "[32mGET /logout HTTP/1.1[0m" 302 -
+2025-12-19 14:41:17,221 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:41:17] "GET /login HTTP/1.1" 200 -
+2025-12-19 14:41:17,308 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2025-12-19 14:41:17,380 - werkzeug - INFO - 127.0.0.1 - - [19/Dec/2025 14:41:17] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-01-01 17:55:13,448 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.11:5000
+2026-01-01 17:55:13,449 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-01 17:55:13,474 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2026-01-01 17:55:14,158 - werkzeug - WARNING -  * Debugger is active!
+2026-01-01 17:55:14,163 - werkzeug - INFO -  * Debugger PIN: 996-777-099
+2026-01-01 17:55:16,772 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2026-01-01 17:55:16,776 - werkzeug - INFO - 127.0.0.1 - - [01/Jan/2026 17:55:16] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-01 17:55:16,924 - werkzeug - INFO - 127.0.0.1 - - [01/Jan/2026 17:55:16] "GET /login HTTP/1.1" 200 -
+2026-01-12 15:33:42,000 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-01-12 15:33:42,001 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-12 15:33:42,002 - werkzeug - INFO -  * Restarting with stat
+2026-01-12 15:33:42,351 - werkzeug - WARNING -  * Debugger is active!
+2026-01-12 15:33:42,364 - werkzeug - INFO -  * Debugger PIN: 993-133-626
+2026-01-12 15:33:47,812 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2026-01-12 15:33:47,813 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 15:33:47] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-12 15:33:47,835 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 15:33:47] "GET /login HTTP/1.1" 200 -
+2026-01-12 15:33:48,356 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2026-01-12 15:33:48,372 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 15:33:48] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-01-12 15:33:53,869 - __main__ - INFO - Activity: admin - login
+2026-01-12 15:33:53,869 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 15:33:53] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-12 15:33:53,901 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 15:33:53] "GET /index HTTP/1.1" 200 -
+2026-01-12 15:33:53,925 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 15:33:53] "GET /static/tcai_logo.jpeg HTTP/1.1" 200 -
+2026-01-12 15:33:55,650 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2026-01-12 15:33:55,652 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 15:33:55] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-01-12 16:38:38,501 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.4:5000
+2026-01-12 16:38:38,502 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-12 16:38:38,505 - werkzeug - INFO -  * Restarting with stat
+2026-01-12 16:38:39,014 - werkzeug - WARNING -  * Debugger is active!
+2026-01-12 16:38:39,019 - werkzeug - INFO -  * Debugger PIN: 913-201-260
+2026-01-12 16:38:43,698 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2026-01-12 16:38:43,699 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 16:38:43] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-12 16:38:43,723 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 16:38:43] "GET /login HTTP/1.1" 200 -
+2026-01-12 16:38:44,286 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2026-01-12 16:38:44,311 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 16:38:44] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-01-12 16:38:47,268 - __main__ - INFO - Activity: admin - login
+2026-01-12 16:38:47,271 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 16:38:47] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-12 16:38:47,312 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 16:38:47] "GET /index HTTP/1.1" 200 -
+2026-01-12 16:38:47,336 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 16:38:47] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2026-01-12 16:38:47,557 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2026-01-12 16:38:47,583 - werkzeug - INFO - 127.0.0.1 - - [12/Jan/2026 16:38:47] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-01-12 17:04:40,712 - werkzeug - INFO -  * Detected change in 'D:\\xlsx_new\\app.py', reloading
+2026-01-12 17:04:40,751 - werkzeug - INFO -  * Restarting with stat
+2026-01-12 17:04:41,441 - werkzeug - WARNING -  * Debugger is active!
+2026-01-12 17:04:41,446 - werkzeug - INFO -  * Debugger PIN: 913-201-260
+2026-01-13 13:01:49,457 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2026-01-13 13:01:49,467 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-13 13:01:49,467 - werkzeug - INFO -  * Restarting with stat
+2026-01-13 13:01:51,007 - werkzeug - WARNING -  * Debugger is active!
+2026-01-13 13:01:51,018 - werkzeug - INFO -  * Debugger PIN: 913-201-260
+2026-01-13 13:02:03,319 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2026-01-13 13:02:03,323 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 13:02:03] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-13 13:02:03,346 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 13:02:03] "GET /login HTTP/1.1" 200 -
+2026-01-13 13:02:03,503 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2026-01-13 13:02:03,537 - werkzeug - INFO - 127.0.0.1 - - [13/Jan/2026 13:02:03] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-01-14 19:38:43,463 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.10:5000
+2026-01-14 19:38:43,463 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2026-01-14 19:38:43,474 - werkzeug - INFO -  * Restarting with stat
+2026-01-14 19:38:44,837 - werkzeug - WARNING -  * Debugger is active!
+2026-01-14 19:38:44,840 - werkzeug - INFO -  * Debugger PIN: 203-651-235
+2026-01-14 19:49:29,686 - __main__ - INFO - Anonymous user accessing home, redirecting to login
+2026-01-14 19:49:29,686 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:49:29] "[32mGET / HTTP/1.1[0m" 302 -
+2026-01-14 19:49:29,811 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:49:29] "GET /login HTTP/1.1" 200 -
+2026-01-14 19:49:30,909 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2026-01-14 19:49:30,997 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:49:30] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2026-01-14 19:49:36,131 - __main__ - INFO - Activity: admin - login
+2026-01-14 19:49:36,131 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:49:36] "[32mPOST /login HTTP/1.1[0m" 302 -
+2026-01-14 19:49:36,193 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:49:36] "GET /index HTTP/1.1" 200 -
+2026-01-14 19:49:36,241 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:49:36] "[36mGET /static/tcai_logo.jpeg HTTP/1.1[0m" 304 -
+2026-01-14 19:49:36,723 - __main__ - WARNING - 404 error: http://127.0.0.1:5000/favicon.ico
+2026-01-14 19:49:36,753 - werkzeug - INFO - 127.0.0.1 - - [14/Jan/2026 19:49:36] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -

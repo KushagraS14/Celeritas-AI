@@ -1,0 +1,103 @@
+{
+    "Client ID": "XF9038",
+    "Client Name": "ASHOK HARI VIBHANDIK",
+    "PAN": "AAMPV2440B",
+    "Taxpnl Statement for Equity from 2024-04-01 to 2025-03-31": [
+        {
+            "Realized Profit Breakdown": {
+                "Intraday/Speculative profit": 0.0,
+                "Short Term profit": 234.9,
+                "Long Term profit": -125.05,
+                "Non Equity profit": 254.95
+            }
+        },
+        {
+            "Turnover Breakdown": {
+                "Intraday/Speculative turnover": 4.6464
+            }
+        },
+        {
+            "Charges": [
+                {
+                    "Account Head": "Other Charges",
+                    "Total Turnover": 0.0
+                },
+                {
+                    "Account Head": "Other Credits & Debits",
+                    "Total Turnover": 0.0
+                },
+                {
+                    "Account Head": "Intraday",
+                    "Total Turnover": 0.0
+                },
+                {
+                    "Account Head": "Symbol",
+                    "Total Turnover": 0.0
+                },
+                {
+                    "Account Head": "BAJAJHCARE",
+                    "Total Turnover": 11404.8
+                }
+            ]
+        },
+        {
+            "Other Charges": {
+                "Other Credits & Debits": 0.0
+            }
+        },
+        {
+            "Intraday": [
+                {
+                    "Symbol": "Symbol",
+                    "Quantity": 0.0,
+                    "Buy Value": 0.0,
+                    "Sell Value": 0.0,
+                    "Realized P&L": 0.0
+                }
+            ]
+        },
+        {
+            "Short Term Trade": [
+                {
+                    "Symbol": "Symbol",
+                    "Quantity": 0.0,
+                    "Buy Value": 0.0,
+                    "Sell Value": 0.0,
+                    "Realized P&L": 0.0
+                },
+                {
+                    "Symbol": "NTPC",
+                    "Quantity": 1.0,
+                    "Buy Value": 429.25,
+                    "Sell Value": 323.1,
+                    "Realized P&L": -106.15
+                }
+            ]
+        },
+        {
+            "Long Term Trade": [
+                {
+                    "Symbol": "Symbol",
+                    "Quantity": 0.0,
+                    "Buy Value": 0.0,
+                    "Sell Value": 0.0,
+                    "Realized P&L": 0.0
+                },
+                {
+                    "Symbol": "TNPL",
+                    "Quantity": 10.0,
+                    "Buy Value": 1100.5,
+                    "Sell Value": 1809.0,
+                    "Realized P&L": 708.5
+                },
+                {
+                    "Symbol": "TATVA",
+                    "Quantity": 13.0,
+                    "Buy Value": 14079.0,
+                    "Sell Value": 11699.35,
+                    "Realized P&L": -2379.65
+                }
+            ]
+        }
+    ]
+}
